@@ -1,21 +1,24 @@
+
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #fefefe;
   color: #333;
-  padding: 20px;
+  margin: 50px;
   line-height: 1.6;
 }
 
-header, section, footer {
-  margin-bottom: 30px;
-}
-
 h1 {
-  color: #0077cc;
+    
+  position: relative;
+  padding: 60px 10px 20px 10px; /* top, right, bottom, left */
+
+  color: #2a7ae2;
+  margin-top: 200px; /* adjust to fit your new image height */
 }
 
 a {
-  color: #cc3300;
+  color: #e02b20;
   text-decoration: none;
 }
 
@@ -23,7 +26,35 @@ a:hover {
   text-decoration: underline;
 }
 
+section, footer {
+  margin-top: 30px;
+}
+
 img {
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header {
+  position: relative;
+  padding: 40px 20px;
+}
+
+.corner-image {
+  position: absolute;
+  top: 0px;
+  width: 200px; /* adjust size as needed */
+  height: auto;
+}
+
+.corner-image.left {
+  left: 10px;
+}
+
+.corner-image.right {
+  right: 10px;
+}
+
+header h1 {
+  margin-top: 100px;
 }
